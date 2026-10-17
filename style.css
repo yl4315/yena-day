@@ -1,0 +1,43 @@
+:root {
+  --bg: #fffbf6;
+  --text: #2b2f38;
+  --muted: #6b7180;
+  --line: #ece6de;
+  --link: #3b6fd8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15161a;
+    --text: #eceef1;
+    --muted: #9aa0aa;
+    --line: #2a2d33;
+    --link: #7aa5ff;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.7 -apple-system, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", system-ui, sans-serif;
+}
+main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+a { color: var(--link); }
+h1 { font-size: 28px; margin: 8px 0; }
+h2 { font-size: 18px; margin-top: 28px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0; }
+code { font-size: 14px; }
+.muted, .note { color: var(--muted); font-size: 14px; }
+.back { margin: 0 0 16px; }
+.hero { text-align: center; margin-bottom: 28px; }
+.lead { color: var(--muted); margin: 0; }
+.logo {
+  width: 120px; height: 120px; margin: 0 auto 12px; padding: 22px 18px;
+  background: #fff; border-radius: 28px; box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+  display: flex; flex-wrap: wrap; gap: 8px; align-content: center;
+}
+.logo span { height: 16px; border-radius: 6px; display: block; }
+.features { list-style: none; padding: 0; display: grid; gap: 12px; }
+.features li { border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+.features strong { display: block; }
+.links { text-align: center; font-weight: 600; }
